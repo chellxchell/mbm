@@ -10,7 +10,8 @@ body, html {
     height:40px;
     background-color: #71B1BA;
     border: none;
-    margin-top:20px;
+    margin-top:25px;
+    padding: 0px 15px 0px 15px;
   }
   
 /* NAVBAR ------------------------------------------------------*/
@@ -173,7 +174,7 @@ body, html {
     margin:auto;
   }
 
-  .col-sm-4{
+  .col-md-4{
     background-color: #2C3840;
     margin-top:25px;
     padding-top:40px;
@@ -186,6 +187,10 @@ body, html {
     background-color:#f1f1f1;
   }
 
+  #services-title{
+    margin-bottom:0px;
+  }
+
   .services-container{
     display: flex;
     flex-direction: column;
@@ -194,9 +199,11 @@ body, html {
     padding: 50px 0px 50px 0px;
   }
 
-  #services-info{
+  .services-info{
     font-family: "Open Sans";
-    font-size: 18px;
+    font-size: 14px;
+    display: flex;
+    padding-top: 15px;
   }
 
   .grid-item {
@@ -230,17 +237,16 @@ body, html {
   #fees-rates,#insurance,#fees-text, #fees-info{
     font-size:20px;
     width: 100%;
-    /* margin:40px;
-    padding:25px; */
-    /* display: flex;
-    flex-direction: column;
-    align-items: center; */
   }
 
   .fees-title{
     width:100%;
     display: flex;
     justify-content: center;
+  }
+
+  .col-md-6{
+    width:100px;
   }
 
   /* CONTACT ------------------------------------------------------*/
