@@ -1,21 +1,10 @@
-/* colors: dark gray 2C3840 
-blue: 71B1BA*/
 body, html {
-    height: 100%;
-    margin: 0;
-    font-family: "Open Sans"
-  }
-
-  button{
-    height:40px;
-    background-color: #71B1BA;
-    border: none;
-    margin-top:25px;
-    padding: 0px 15px 0px 15px;
-  }
+  height: 100%;
+  margin: 0;
+  font-family: "Open Sans"
+}
   
 /* NAVBAR ------------------------------------------------------*/
-  /* Add a black background color to the top navigation */
 .topnav {
   background-color: #2C3840;
   overflow: hidden;
@@ -23,8 +12,6 @@ body, html {
   z-index: 99;
   width:100%
 }
-
-/* Style the links inside the navigation bar */
 .topnav a {
   float: left;
   display: block;
@@ -34,31 +21,26 @@ body, html {
   text-decoration: none;
   font-size: 17px;
 }
-
-/* Change the color of links on hover */
 .topnav a:hover {
   background-color: #71B1BA;
   color: black;
   text-decoration:none;
 }
-
-/* Add an active class to highlight the current page */
 .active {
   background-color: #71B1BA;
   color: white;
 }
-
-/* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
   display: none;
 }
 
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
   .topnav{
     z-index: 99;
   }
-  .topnav a:not(:first-child) {display: none;}
+  .topnav a:not(:first-child) {
+    display: none;
+  }
   .topnav a.icon {
     float: right;
     display: block;
@@ -66,8 +48,6 @@ body, html {
     z-index:100;
   }
 }
-
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 600px) {
   .topnav.responsive {position: fixed; top:0}
   .topnav.responsive a.icon {
@@ -84,9 +64,8 @@ body, html {
 
 /* HOME PAGE ------------------------------------------------------*/
   .bg {
-    /* background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("cover.png"); */
     background:url("cover.png");
-    height: 95%; 
+    height: 100%; 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -95,38 +74,40 @@ body, html {
     align-items: center;
     justify-content: center;
   }
-
   .intro-box{
+    height:500px;
     width:600px;
-    background:linear-gradient( rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75) );
+    background:linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) );
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height:500px;
   }
-
-  #intro-title{
-    color:white;
-    font-size:100px;
-    line-height:80px;
-    text-align: center;
-    font-weight: bold;
-  }
-
   .section-title{
     color:#71B1BA;
     font-family: "Open Sans";
-    font-size:30px;
+    font-size:35px;
     font-weight:bold;
     text-align: center;
+  }
+  .logo{
+    width:75%;
+    margin-left: 75px;
+    padding-bottom:25px;
+  }
+  button{
+    height:40px;
+    background-color: #71B1BA;
+    border: none;
+    margin-top:25px;
+    padding: 0px 15px 0px 15px;
+    color:white;
   }
 
   /* ABOUT ------------------------------------------------------*/
   #about{
     background-color: #2C3840;
   }
-
   .about-container{
     display: flex;
     flex-direction:column;
@@ -134,16 +115,15 @@ body, html {
     align-items: center;
     padding:75px 20% 75px 20%;
   }
-
-
   #about-text{
     color:white;
     font-size: 20px;
   }
+
   /* STAFF ------------------------------------------------------*/
   .staff-container{
-    padding-top:30px;
-    padding-bottom:30px;
+    padding-top:75px;
+    padding-bottom:75px;
   }
   .staff-container > div {
     font-size:30px;
@@ -151,46 +131,41 @@ body, html {
     color:white;
     font-family: "Open Sans";
   }
-  
   .staff-title{
     font-size: 30px;
     text-align: center;
   }
-
   .staff-info{
     font-size: 16px;
-    margin:10px;
+    margin:10px; 
+    padding:25px;
   }
-
   #roel{
     width: 80%;
     display:block;
     margin:auto;
   }
-
   #george{
     width: 80%;
     display:block;
     margin:auto;
   }
-
   .col-md-4{
     background-color: #2C3840;
     margin-top:25px;
     padding-top:40px;
     padding-bottom:40px;
   }
-
   
    /* SERVICES ------------------------------------------------------*/
   #services{
     background-color:#f1f1f1;
+    padding-top:25px;
+    padding-bottom:25px;
   }
-
   #services-title{
     margin-bottom:0px;
   }
-
   .services-container{
     display: flex;
     flex-direction: column;
@@ -198,14 +173,11 @@ body, html {
     align-items: center;
     padding: 50px 0px 50px 0px;
   }
-
   .services-info{
-    font-family: "Open Sans";
     font-size: 14px;
     display: flex;
     padding-top: 15px;
   }
-
   .grid-item {
     background-color: #71B1BA;
     font-size: 30px;
@@ -215,7 +187,6 @@ body, html {
     align-items: center;
     color:white;
   }
-
   .col-sm-3{
     margin:auto;
     height:150px;
@@ -226,27 +197,22 @@ body, html {
     background-color: #2C3840;
     padding:100px 50px 100px 50px;
     color:white;
+    padding-left:15%;
+    padding-right:15%;
   }
-
-  #fees-container{
-    display: flex;
-    flex-direction: column;
-    align-items: left
-  }
-
-  #fees-rates,#insurance,#fees-text, #fees-info{
+  #fees-rates,#fees-text, #fees-info{
     font-size:20px;
     width: 100%;
+    line-height:0.8;
   }
-
   .fees-title{
     width:100%;
     display: flex;
     justify-content: center;
+    margin-bottom:0
   }
-
-  .col-md-6{
-    width:100px;
+  hr{
+    background: #6d6e71
   }
 
   /* CONTACT ------------------------------------------------------*/
