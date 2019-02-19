@@ -150,7 +150,7 @@ body, html {
     display:block;
     margin:auto;
   }
-  .col-md-4{
+  .staff-div{
     background-color: #2C3840;
     margin-top:25px;
     padding-top:40px;
@@ -218,5 +218,17 @@ body, html {
   /* CONTACT ------------------------------------------------------*/
   #contact{
     background-color:#f1f1f1;
+    padding-top:75px;
+    padding-bottom:75px;
+  }
+  #address{
+    padding-left:15%;
+    font-size:20px;
+    color: #2C3840;
+  }
+
+  #contact-info{
+    display: flex;
+    align-items: center;
   }
 
