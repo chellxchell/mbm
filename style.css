@@ -230,6 +230,7 @@ body, html {
   #contact-info{
     display: flex;
     align-items: center;
+    justify-content:center;
   }
   .gmap_canvas {
     overflow:hidden;
@@ -241,4 +242,22 @@ body, html {
 
   .contact-cont{
     overflow:hidden;
+  }
+
+
+  .footer{
+    background-color: #2C3840;
+    overflow: hidden;
+    height:50px;
+    z-index: 99;
+    width:100%;
+    display: flex;
+    align-items:center;
+    padding-left:20px;
+  }
+
+  a.footer-text,a.footer-text:hover{
+    color:white;
+    font-family: Open Sans;
+    text-decoration: none;
   }
